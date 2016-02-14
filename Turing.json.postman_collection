@@ -1,0 +1,34 @@
+{
+	"id": "f43139bd-1796-70bf-d02f-1604de306ab3",
+	"name": "Turing",
+	"description": "Homework 1 rest request",
+	"order": [
+		"fd5fbe61-f095-0661-7d10-190ad24fcada"
+	],
+	"folders": [],
+	"timestamp": 1455412379666,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "fd5fbe61-f095-0661-7d10-190ad24fcada",
+			"headers": "",
+			"url": "https://www.googleapis.com/books/v1/volumes?q=turing",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "var data = JSON.parse(responseBody);\n\ntests[\"Status code is 200\"] = responseCode.code === 200;\ntests[\"Body contains turing\"] = responseBody.has(\"Turing\");\ntests[\"Number of items\"] = data.totalItems > 100",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1455412837139,
+			"name": "https://www.googleapis.com/books/v1/volumes?q=turing",
+			"description": "",
+			"collectionId": "f43139bd-1796-70bf-d02f-1604de306ab3",
+			"responses": []
+		}
+	]
+}

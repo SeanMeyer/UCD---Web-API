@@ -1,0 +1,1298 @@
+{
+	"id": "b60d3642-d408-14c6-629b-b25685ab628a",
+	"name": "Node Server",
+	"description": "",
+	"order": [
+		"05e7d2b1-987b-6f35-27eb-d060743b1b12",
+		"729e676e-8803-688c-1993-6bed067a5c86",
+		"269b3ac2-b5fa-3268-b38e-834b14d2998d",
+		"2f3ebe4a-7e66-59c9-55f2-c9e108579fba",
+		"2cc9a410-6004-5876-12ba-0ea6f21b566f"
+	],
+	"folders": [],
+	"timestamp": 1457207959229,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "05e7d2b1-987b-6f35-27eb-d060743b1b12",
+			"headers": "",
+			"url": "http://seanmeyer-test.apigee.net/apiHW/gets?testparam=testvalue",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "b60d3642-d408-14c6-629b-b25685ab628a",
+			"data": [],
+			"dataMode": "params",
+			"name": "/gets",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1457213742733,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 71,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "502",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:36:32 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"1f6-2vhXb3KfC2zI39y4nu5oRw\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<p> HTTP GET request accepted. </p><p> No query parameters. </p><p> Request Headers: <pre>{\n \"accept\": \"*/*\",\n \"accept-encoding\": \"gzip, deflate, sdch\",\n \"accept-language\": \"en-US, en;q=0.8\",\n \"cache-control\": \"no-cache\",\n \"host\": \"seanmeyer-test.apigee.net\",\n \"postman-token\": \"ff719362-74c7-85a5-909d-4d6c85cc755e\",\n \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML\",\n \"x-forwarded-for\": \"67.173.244.6\",\n \"x-forwarded-port\": \"80\",\n \"x-forwarded-proto\": \"http\"\n}</pre></p>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "995971b4-37f1-77a4-270e-f420aae71c6b",
+					"name": "no parameters",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/gets",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"type": "text",
+								"name": "Postman-Token",
+								"value": "ff719362-74c7-85a5-909d-4d6c85cc755e"
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 68,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "568",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:37:36 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"238-BCOX1W8fsT0J93XpgHZGuA\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<p> HTTP GET request accepted. </p><p> Query Parameters: <pre>{\n \"testparam\": \"testvalue\",\n \"secondParam\": \"something\"\n}</pre></p><p> Request Headers: <pre>{\n \"accept\": \"*/*\",\n \"accept-encoding\": \"gzip, deflate, sdch\",\n \"accept-language\": \"en-US, en;q=0.8\",\n \"cache-control\": \"no-cache\",\n \"host\": \"seanmeyer-test.apigee.net\",\n \"postman-token\": \"f7875d8a-ae2e-ce4d-6bcf-c27c3a284ddf\",\n \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML\",\n \"x-forwarded-for\": \"67.173.244.6\",\n \"x-forwarded-port\": \"80\",\n \"x-forwarded-proto\": \"http\"\n}</pre></p>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "4048f580-6eaf-4985-9c67-927c011827cf",
+					"name": "parameters",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/gets?testparam=testvalue&secondParam=something",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"type": "text",
+								"name": "Postman-Token",
+								"value": "f7875d8a-ae2e-ce4d-6bcf-c27c3a284ddf"
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 196,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "104",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:38:43 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"68-cBX4e7+LNfwf3WvGu1dLbg\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "Only requests made (with the correct HTTP method) to /gets, /posts, /puts, or /deletes will be accepted.",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "preview",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "b92254ce-a90e-d826-1ba4-f0b8c114f331",
+					"name": "Invalid Request (Post)",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/gets?testparam=testvalue",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "246b41c6-0b82-8ff4-b939-b418854538c8"
+							}
+						],
+						"data": "",
+						"method": "POST",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "269b3ac2-b5fa-3268-b38e-834b14d2998d",
+			"headers": "",
+			"url": "http://seanmeyer-test.apigee.net/apiHW/puts",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"collectionId": "b60d3642-d408-14c6-629b-b25685ab628a",
+			"data": [],
+			"dataMode": "params",
+			"name": "/puts",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1457214193892,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 68,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "592",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:43:17 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"250-KK5YZI249lK0tgJES5GlzA\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<p> HTTP PUT request accepted. </p><p> No query parameters. </p><p> Request Headers: <pre>{\n \"accept\": \"*/*\",\n \"accept-encoding\": \"gzip, deflate, sdch\",\n \"accept-language\": \"en-US, en;q=0.8\",\n \"cache-control\": \"no-cache\",\n \"content-length\": \"0\",\n \"host\": \"seanmeyer-test.apigee.net\",\n \"origin\": \"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\",\n \"postman-token\": \"8afa3fd8-f370-4ee7-b9d2-b123308d041f\",\n \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML\",\n \"x-forwarded-for\": \"67.173.244.6\",\n \"x-forwarded-port\": \"80\",\n \"x-forwarded-proto\": \"http\"\n}</pre></p>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "preview",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "1aacd3b7-cd2f-b5a3-1c13-a5be7c2b0fa9",
+					"name": "no parameters",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/puts",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "8afa3fd8-f370-4ee7-b9d2-b123308d041f"
+							}
+						],
+						"data": "",
+						"method": "PUT",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 71,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "658",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:43:28 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"292-BdNoggpmnqTbkCTlhbBbTA\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<p> HTTP PUT request accepted. </p><p> Query Parameters: <pre>{\n \"testparam\": \"testvalue\",\n \"secondParam\": \"something\"\n}</pre></p><p> Request Headers: <pre>{\n \"accept\": \"*/*\",\n \"accept-encoding\": \"gzip, deflate, sdch\",\n \"accept-language\": \"en-US, en;q=0.8\",\n \"cache-control\": \"no-cache\",\n \"content-length\": \"0\",\n \"host\": \"seanmeyer-test.apigee.net\",\n \"origin\": \"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\",\n \"postman-token\": \"01a51086-efa3-71cc-c6c7-9607c07f2b74\",\n \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML\",\n \"x-forwarded-for\": \"67.173.244.6\",\n \"x-forwarded-port\": \"80\",\n \"x-forwarded-proto\": \"http\"\n}</pre></p>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "cd3eabb1-9bb7-3042-64ce-8c348946236f",
+					"name": "parameters",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/puts?testparam=testvalue&secondParam=something",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "01a51086-efa3-71cc-c6c7-9607c07f2b74"
+							}
+						],
+						"data": "",
+						"method": "PUT",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 67,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "104",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:43:36 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"68-cBX4e7+LNfwf3WvGu1dLbg\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "Only requests made (with the correct HTTP method) to /gets, /posts, /puts, or /deletes will be accepted.",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "2eed6048-d30b-6b37-e0df-6e8328f0a722",
+					"name": "invalid request (post)",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/puts?testparam=testvalue&secondParam=something",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "426f6be8-9729-55b2-3676-3cb0cea033db"
+							}
+						],
+						"data": "",
+						"method": "POST",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "2cc9a410-6004-5876-12ba-0ea6f21b566f",
+			"headers": "",
+			"url": "http://seanmeyer-test.apigee.net/apiHW/",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "b60d3642-d408-14c6-629b-b25685ab628a",
+			"data": [],
+			"dataMode": "params",
+			"name": "Base URL",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1457214331491,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 73,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "104",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:45:36 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"68-cBX4e7+LNfwf3WvGu1dLbg\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "Only requests made (with the correct HTTP method) to /gets, /posts, /puts, or /deletes will be accepted.",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "ad9761fa-76c9-0cee-b156-4687d73052d5",
+					"name": "base URL",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "ce8e20dd-f42e-68ce-4e16-13e0ffbb0d08"
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "2f3ebe4a-7e66-59c9-55f2-c9e108579fba",
+			"headers": "",
+			"url": "http://seanmeyer-test.apigee.net/apiHW/deletes",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"collectionId": "b60d3642-d408-14c6-629b-b25685ab628a",
+			"data": [],
+			"dataMode": "params",
+			"name": "/deletes",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1457214256959,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 66,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "571",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:44:20 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"23b-pCZhgKGBP0JFDLNygU8bkg\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<p> HTTP DELETE request accepted. </p><p> No query parameters. </p><p> Request Headers: <pre>{\n \"accept\": \"*/*\",\n \"accept-encoding\": \"gzip, deflate, sdch\",\n \"accept-language\": \"en-US, en;q=0.8\",\n \"cache-control\": \"no-cache\",\n \"host\": \"seanmeyer-test.apigee.net\",\n \"origin\": \"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\",\n \"postman-token\": \"5f3d64cc-e90e-b955-80a3-1ca2e5cdc8c9\",\n \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML\",\n \"x-forwarded-for\": \"67.173.244.6\",\n \"x-forwarded-port\": \"80\",\n \"x-forwarded-proto\": \"http\"\n}</pre></p>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "preview",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "ff13b514-db29-1906-94da-e49337b4abd1",
+					"name": "no parameters",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/deletes",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "5f3d64cc-e90e-b955-80a3-1ca2e5cdc8c9"
+							}
+						],
+						"data": "",
+						"method": "DELETE",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 69,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "637",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:44:28 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"27d-RI4EzcMxviioYh7hh0SB2A\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<p> HTTP DELETE request accepted. </p><p> Query Parameters: <pre>{\n \"testparam\": \"testvalue\",\n \"secondParam\": \"something\"\n}</pre></p><p> Request Headers: <pre>{\n \"accept\": \"*/*\",\n \"accept-encoding\": \"gzip, deflate, sdch\",\n \"accept-language\": \"en-US, en;q=0.8\",\n \"cache-control\": \"no-cache\",\n \"host\": \"seanmeyer-test.apigee.net\",\n \"origin\": \"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\",\n \"postman-token\": \"0e93794d-1118-29af-10b3-7666cba3a9cf\",\n \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML\",\n \"x-forwarded-for\": \"67.173.244.6\",\n \"x-forwarded-port\": \"80\",\n \"x-forwarded-proto\": \"http\"\n}</pre></p>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "1875c6b3-d9a4-2a54-925d-74cd465a6e00",
+					"name": "parameters",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/deletes?testparam=testvalue&secondParam=something",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "0e93794d-1118-29af-10b3-7666cba3a9cf"
+							}
+						],
+						"data": "",
+						"method": "DELETE",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 69,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "104",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:44:35 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"68-cBX4e7+LNfwf3WvGu1dLbg\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "Only requests made (with the correct HTTP method) to /gets, /posts, /puts, or /deletes will be accepted.",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "560385b4-d49d-0571-4239-c99d334996d5",
+					"name": "invalid request (get)",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/deletes?testparam=testvalue&secondParam=something",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "ab7a7717-7373-1fc9-c3b7-e9001ca6de9b"
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "729e676e-8803-688c-1993-6bed067a5c86",
+			"headers": "",
+			"url": "http://seanmeyer-test.apigee.net/apiHW/posts",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "b60d3642-d408-14c6-629b-b25685ab628a",
+			"data": [],
+			"dataMode": "params",
+			"name": "/posts",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1457214102578,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 71,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "587",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:41:47 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"24b-mfiDf936DR3lNFgOAzwolg\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<p> HTTP POST request accepted. </p><p> No query parameters. </p><p> Request Headers: <pre>{\n \"accept\": \"*/*\",\n \"accept-encoding\": \"gzip, deflate\",\n \"accept-language\": \"en-US, en;q=0.8\",\n \"cache-control\": \"no-cache\",\n \"content-length\": \"0\",\n \"host\": \"seanmeyer-test.apigee.net\",\n \"origin\": \"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\",\n \"postman-token\": \"03b0c8cc-b3e2-ae5a-d4f2-618a7caa224a\",\n \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML\",\n \"x-forwarded-for\": \"67.173.244.6\",\n \"x-forwarded-port\": \"80\",\n \"x-forwarded-proto\": \"http\"\n}</pre></p>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "78da8fce-3fc3-4827-711f-11f91fb84206",
+					"name": "No parameters",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/posts",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "03b0c8cc-b3e2-ae5a-d4f2-618a7caa224a"
+							}
+						],
+						"data": "",
+						"method": "POST",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 70,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "653",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:42:19 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"28d-A+oO+jaHIh/M87g/ryLtbg\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<p> HTTP POST request accepted. </p><p> Query Parameters: <pre>{\n \"testparam\": \"testvalue\",\n \"secondParam\": \"something\"\n}</pre></p><p> Request Headers: <pre>{\n \"accept\": \"*/*\",\n \"accept-encoding\": \"gzip, deflate\",\n \"accept-language\": \"en-US, en;q=0.8\",\n \"cache-control\": \"no-cache\",\n \"content-length\": \"0\",\n \"host\": \"seanmeyer-test.apigee.net\",\n \"origin\": \"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop\",\n \"postman-token\": \"9f895399-7338-f514-cf18-46ef61a761aa\",\n \"user-agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML\",\n \"x-forwarded-for\": \"67.173.244.6\",\n \"x-forwarded-port\": \"80\",\n \"x-forwarded-proto\": \"http\"\n}</pre></p>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "preview",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "561ad366-8bed-0d95-c352-11cb59bf922e",
+					"name": "parrameters",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/posts?testparam=testvalue&secondParam=something",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "9f895399-7338-f514-cf18-46ef61a761aa"
+							}
+						],
+						"data": "",
+						"method": "POST",
+						"dataMode": "params"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 72,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "104",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sat, 05 Mar 2016 21:42:36 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"68-cBX4e7+LNfwf3WvGu1dLbg\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "Only requests made (with the correct HTTP method) to /gets, /posts, /puts, or /deletes will be accepted.",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"isSample": true,
+					"scrollToResult": true,
+					"runTests": true,
+					"id": "4059a8f9-f116-a9f0-15d8-a727e5fb5908",
+					"name": "invalid request (get)",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/apiHW/posts?testparam=testvalue&secondParam=something",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "6efdb831-2400-c775-6832-45244d5936df"
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

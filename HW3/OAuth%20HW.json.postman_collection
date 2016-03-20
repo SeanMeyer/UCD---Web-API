@@ -1,0 +1,955 @@
+{
+	"id": "385a9d6e-abbc-113f-530f-f211d938571a",
+	"name": "OAuth HW",
+	"description": "Demonstration of the various different parts of the OAuth HW against my Apigee proxy. The responses are all saved in the one request.",
+	"order": [
+		"6f193f0a-58be-0873-b8fa-1f72b54771df"
+	],
+	"folders": [],
+	"timestamp": 1458438811800,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "6f193f0a-58be-0873-b8fa-1f72b54771df",
+			"headers": "Authorization: Bearer oGFFai641fKawwp9Fl4I8BVZ2rSM\nCache-Control: no-cache\nPostman-Token: 6300a5e4-9d4c-3cc9-c50f-54fe3096db73\n",
+			"url": "http://seanmeyer-test.apigee.net/github-user-info/oauth?user=seanmeyer",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "client_id",
+					"value": "dfD2OGMUtlWxxN6zjyi0N3wRwSGhOHQL"
+				},
+				{
+					"key": "client_secret",
+					"value": "SWTHTvUJHyJ2R1kY"
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1458440600707,
+			"name": "My Requests",
+			"description": "All the requests are saved here.",
+			"collectionId": "385a9d6e-abbc-113f-530f-f211d938571a",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 121,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "485",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sun, 20 Mar 2016 01:54:39 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\n  \"issued_at\" : \"1458438879286\",\n  \"application_name\" : \"99bb49ad-d8e3-40a5-8fe8-6abdb0f9ad77\",\n  \"scope\" : \"\",\n  \"status\" : \"approved\",\n  \"api_product_list\" : \"[GitHub API]\",\n  \"expires_in\" : \"3599\",\n  \"developer.email\" : \"tesla@weathersample.com\",\n  \"token_type\" : \"BearerToken\",\n  \"client_id\" : \"dfD2OGMUtlWxxN6zjyi0N3wRwSGhOHQL\",\n  \"access_token\" : \"FbXWbcRJuQpJPEIMTSOA45S2qsUK\",\n  \"organization_name\" : \"seanmeyer\",\n  \"refresh_token_expires_in\" : \"0\",\n  \"refresh_count\" : \"0\"\n}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"state": {
+						"size": "normal"
+					},
+					"id": "24e27f91-441a-3678-ab1e-acb4873b35b6",
+					"name": "Getting Access Token",
+					"request": {
+						"url": "https://seanmeyer-test.apigee.net/oauth/client_credential/accesstoken?grant_type=client_credentials",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "3d85e26f-9ae5-0a70-1d15-657fa870a1ba"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"data": [
+							{
+								"key": "client_id",
+								"value": "dfD2OGMUtlWxxN6zjyi0N3wRwSGhOHQL"
+							},
+							{
+								"key": "client_secret",
+								"value": "SWTHTvUJHyJ2R1kY"
+							}
+						],
+						"method": "POST",
+						"dataMode": "urlencoded"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 122,
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "Access-Control-Expose-Headers",
+							"key": "Access-Control-Expose-Headers",
+							"value": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+							"description": "Lets a server whitelist headers that browsers are allowed to access."
+						},
+						{
+							"name": "Cache-Control",
+							"key": "Cache-Control",
+							"value": "public, max-age=60, s-maxage=60",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"name": "Content-Security-Policy",
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'",
+							"description": "Custom header"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sun, 20 Mar 2016 02:09:31 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"325d7e51728c5d93e3bae951dc410668\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Last-Modified",
+							"key": "Last-Modified",
+							"value": "Sat, 05 Mar 2016 21:53:02 GMT",
+							"description": "The last modified date for the requested object, in RFC 2822 format"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GitHub.com",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Status",
+							"key": "Status",
+							"value": "200 OK",
+							"description": "Custom header"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains; preload",
+							"description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept, Accept-Encoding",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"name": "X-Frame-Options",
+							"key": "X-Frame-Options",
+							"value": "deny",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"name": "X-GitHub-Media-Type",
+							"key": "X-GitHub-Media-Type",
+							"value": "github.v3",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-GitHub-Request-Id",
+							"key": "X-GitHub-Request-Id",
+							"value": "36D13CAB:6B98:1D57927:56EE065B",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"key": "X-RateLimit-Limit",
+							"value": "60",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"key": "X-RateLimit-Remaining",
+							"value": "37",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"key": "X-RateLimit-Reset",
+							"value": "1458439773",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Served-By",
+							"key": "X-Served-By",
+							"value": "593010132f82159af0ded24b4932e109",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\n  \"login\": \"SeanMeyer\",\n  \"id\": 11780159,\n  \"avatar_url\": \"https://avatars.githubusercontent.com/u/11780159?v=3\",\n  \"gravatar_id\": \"\",\n  \"url\": \"https://api.github.com/users/SeanMeyer\",\n  \"html_url\": \"https://github.com/SeanMeyer\",\n  \"followers_url\": \"https://api.github.com/users/SeanMeyer/followers\",\n  \"following_url\": \"https://api.github.com/users/SeanMeyer/following{/other_user}\",\n  \"gists_url\": \"https://api.github.com/users/SeanMeyer/gists{/gist_id}\",\n  \"starred_url\": \"https://api.github.com/users/SeanMeyer/starred{/owner}{/repo}\",\n  \"subscriptions_url\": \"https://api.github.com/users/SeanMeyer/subscriptions\",\n  \"organizations_url\": \"https://api.github.com/users/SeanMeyer/orgs\",\n  \"repos_url\": \"https://api.github.com/users/SeanMeyer/repos\",\n  \"events_url\": \"https://api.github.com/users/SeanMeyer/events{/privacy}\",\n  \"received_events_url\": \"https://api.github.com/users/SeanMeyer/received_events\",\n  \"type\": \"User\",\n  \"site_admin\": false,\n  \"name\": \"Sean Meyer\",\n  \"company\": null,\n  \"blog\": null,\n  \"location\": \"Denver, CO\",\n  \"email\": null,\n  \"hireable\": null,\n  \"bio\": null,\n  \"public_repos\": 2,\n  \"public_gists\": 0,\n  \"followers\": 0,\n  \"following\": 0,\n  \"created_at\": \"2015-04-03T02:53:34Z\",\n  \"updated_at\": \"2016-03-05T21:53:02Z\"\n}\n",
+					"language": "javascript",
+					"rawDataType": "text",
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"state": {
+						"size": "normal"
+					},
+					"id": "7b450451-0c68-892f-c7d1-dba5e45badea",
+					"name": "Non-OAuth GitHub Request",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/github-user-info?user=seanmeyer",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "168df49a-4418-6e86-126d-ca4de65ca666"
+							}
+						],
+						"data": [
+							{
+								"key": "client_id",
+								"value": "dfD2OGMUtlWxxN6zjyi0N3wRwSGhOHQL"
+							},
+							{
+								"key": "client_secret",
+								"value": "SWTHTvUJHyJ2R1kY"
+							}
+						],
+						"method": "GET",
+						"dataMode": "urlencoded"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 401,
+						"name": "Unauthorized",
+						"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+					},
+					"time": 92,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "32",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sun, 20 Mar 2016 02:18:59 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "WWW-Authenticate",
+							"key": "WWW-Authenticate",
+							"value": "Bearer realm=\"null\",error='invalid_token\",error_description='oauth.v2.InvalidAccessToken: Invalid access token\"",
+							"description": "Indicates the authentication scheme that should be used to access the requested entity."
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "No token was included in Header.",
+					"language": "html",
+					"rawDataType": "text",
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"state": {
+						"size": "normal"
+					},
+					"id": "ad0b01ce-1793-dc98-c69f-76f22c75d8bc",
+					"name": "OAuth Request Without Token",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/github-user-info/oauth?user=seanmeyer",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"type": "text",
+								"name": "Postman-Token",
+								"value": "9ab89ac0-3917-0f7b-4a02-3ee8effa9cdd"
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "urlencoded"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 401,
+						"name": "Unauthorized",
+						"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+					},
+					"time": 82,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "14",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sun, 20 Mar 2016 02:19:26 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "WWW-Authenticate",
+							"key": "WWW-Authenticate",
+							"value": "Bearer realm=\"null\",error='invalid_token\",error_description='keymanagement.service.invalid_access_token: Invalid Access Token\"",
+							"description": "Indicates the authentication scheme that should be used to access the requested entity."
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "Invalid token.",
+					"language": "html",
+					"rawDataType": "text",
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"state": {
+						"size": "normal"
+					},
+					"id": "79033a52-2551-c1dc-bc29-6ac67f8ce345",
+					"name": "OAuth Request With Invalid Token",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/github-user-info/oauth?user=seanmeyer",
+						"headers": [
+							{
+								"key": "Authorization",
+								"value": "Bearer invalidToken",
+								"enabled": true,
+								"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+							},
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "4bad39ce-48a8-e918-cafb-db78c1a288ad"
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "urlencoded"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 154,
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"name": "Access-Control-Expose-Headers",
+							"key": "Access-Control-Expose-Headers",
+							"value": "ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+							"description": "Lets a server whitelist headers that browsers are allowed to access."
+						},
+						{
+							"name": "Cache-Control",
+							"key": "Cache-Control",
+							"value": "public, max-age=60, s-maxage=60",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": "The type of encoding used on the data."
+						},
+						{
+							"name": "Content-Security-Policy",
+							"key": "Content-Security-Policy",
+							"value": "default-src 'none'",
+							"description": "Custom header"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sun, 20 Mar 2016 02:21:53 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"325d7e51728c5d93e3bae951dc410668\"",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"name": "Last-Modified",
+							"key": "Last-Modified",
+							"value": "Sat, 05 Mar 2016 21:53:02 GMT",
+							"description": "The last modified date for the requested object, in RFC 2822 format"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GitHub.com",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Status",
+							"key": "Status",
+							"value": "200 OK",
+							"description": "Custom header"
+						},
+						{
+							"name": "Strict-Transport-Security",
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubdomains; preload",
+							"description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept, Accept-Encoding",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"name": "X-Frame-Options",
+							"key": "X-Frame-Options",
+							"value": "deny",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"name": "X-GitHub-Media-Type",
+							"key": "X-GitHub-Media-Type",
+							"value": "github.v3",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-GitHub-Request-Id",
+							"key": "X-GitHub-Request-Id",
+							"value": "36EC9C51:6B9C:50A626D:56EE0941",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-RateLimit-Limit",
+							"key": "X-RateLimit-Limit",
+							"value": "60",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-RateLimit-Remaining",
+							"key": "X-RateLimit-Remaining",
+							"value": "58",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-RateLimit-Reset",
+							"key": "X-RateLimit-Reset",
+							"value": "1458443567",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-Served-By",
+							"key": "X-Served-By",
+							"value": "318e55760cf7cdb40e61175a4d36cd32",
+							"description": "Custom header"
+						},
+						{
+							"name": "X-XSS-Protection",
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\n  \"login\": \"SeanMeyer\",\n  \"id\": 11780159,\n  \"avatar_url\": \"https://avatars.githubusercontent.com/u/11780159?v=3\",\n  \"gravatar_id\": \"\",\n  \"url\": \"https://api.github.com/users/SeanMeyer\",\n  \"html_url\": \"https://github.com/SeanMeyer\",\n  \"followers_url\": \"https://api.github.com/users/SeanMeyer/followers\",\n  \"following_url\": \"https://api.github.com/users/SeanMeyer/following{/other_user}\",\n  \"gists_url\": \"https://api.github.com/users/SeanMeyer/gists{/gist_id}\",\n  \"starred_url\": \"https://api.github.com/users/SeanMeyer/starred{/owner}{/repo}\",\n  \"subscriptions_url\": \"https://api.github.com/users/SeanMeyer/subscriptions\",\n  \"organizations_url\": \"https://api.github.com/users/SeanMeyer/orgs\",\n  \"repos_url\": \"https://api.github.com/users/SeanMeyer/repos\",\n  \"events_url\": \"https://api.github.com/users/SeanMeyer/events{/privacy}\",\n  \"received_events_url\": \"https://api.github.com/users/SeanMeyer/received_events\",\n  \"type\": \"User\",\n  \"site_admin\": false,\n  \"name\": \"Sean Meyer\",\n  \"company\": null,\n  \"blog\": null,\n  \"location\": \"Denver, CO\",\n  \"email\": null,\n  \"hireable\": null,\n  \"bio\": null,\n  \"public_repos\": 2,\n  \"public_gists\": 0,\n  \"followers\": 0,\n  \"following\": 0,\n  \"created_at\": \"2015-04-03T02:53:34Z\",\n  \"updated_at\": \"2016-03-05T21:53:02Z\"\n}\n",
+					"language": "javascript",
+					"rawDataType": "text",
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"state": {
+						"size": "normal"
+					},
+					"id": "1f8d22ba-5cdf-04bd-5610-be9b5df4ece6",
+					"name": "OAuth Request With Valid Token",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/github-user-info/oauth?user=seanmeyer",
+						"headers": [
+							{
+								"key": "Authorization",
+								"value": "Bearer oGFFai641fKawwp9Fl4I8BVZ2rSM",
+								"enabled": true,
+								"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+							},
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "6300a5e4-9d4c-3cc9-c50f-54fe3096db73"
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "urlencoded"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 500,
+						"name": "Internal Server Error",
+						"detail": "A generic error message, given when no more specific message is suitable."
+					},
+					"time": 116,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "30",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sun, 20 Mar 2016 02:22:45 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "Access token has been revoked.",
+					"language": "html",
+					"rawDataType": "text",
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"state": {
+						"size": "normal"
+					},
+					"id": "854f3b5a-cf59-49e9-9d94-574ab5e5ef37",
+					"name": "Revoking Token",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/github-user-info/revoke?access_token=oGFFai641fKawwp9Fl4I8BVZ2rSM",
+						"headers": [
+							{
+								"key": "Cache-Control",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"name": "Postman-Token",
+								"value": "9b9d7eda-76b0-dfa7-9b6a-d31879e8e378"
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "urlencoded"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 401,
+						"name": "Unauthorized",
+						"detail": "Similar to 403 Forbidden, but specifically for use when authentication is possible but has failed or not yet been provided. The response must include a WWW-Authenticate header field containing a challenge applicable to the requested resource."
+					},
+					"time": 89,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "126",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sun, 20 Mar 2016 02:23:31 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						},
+						{
+							"name": "WWW-Authenticate",
+							"key": "WWW-Authenticate",
+							"value": "Bearer realm=\"null\",error='invalid_token\",error_description='keymanagement.service.access_token_not_approved: Access Token not approved\"",
+							"description": "Indicates the authentication scheme that should be used to access the requested entity."
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"fault\":{\"faultstring\":\"Access Token not approved\",\"detail\":{\"errorcode\":\"keymanagement.service.access_token_not_approved\"}}}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"state": {
+						"size": "normal"
+					},
+					"id": "37fb1f40-827e-4f4f-b3f4-d6070dae02a6",
+					"name": "Using Revoked Token",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/github-user-info/oauth?user=seanmeyer",
+						"headers": [
+							{
+								"key": "Authorization",
+								"value": "Bearer oGFFai641fKawwp9Fl4I8BVZ2rSM",
+								"enabled": true
+							},
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"type": "text",
+								"name": "Postman-Token",
+								"value": "d4338f5c-df07-f2e9-6dfa-bf8f97902674"
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "urlencoded"
+					}
+				},
+				{
+					"status": "",
+					"responseCode": {
+						"code": 500,
+						"name": "Internal Server Error",
+						"detail": "A generic error message, given when no more specific message is suitable."
+					},
+					"time": 76,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "34",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Sun, 20 Mar 2016 02:23:50 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "Apigee Router",
+							"description": "A name for the server"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "Non GET requests are not accepted.",
+					"language": "html",
+					"rawDataType": "text",
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"state": {
+						"size": "normal"
+					},
+					"id": "eabf40d4-c35f-ff12-134b-54a41a3e8225",
+					"name": "Non GET request",
+					"request": {
+						"url": "http://seanmeyer-test.apigee.net/github-user-info/oauth?user=seanmeyer",
+						"headers": [
+							{
+								"key": "Authorization",
+								"value": "Bearer oGFFai641fKawwp9Fl4I8BVZ2rSM",
+								"enabled": true
+							},
+							{
+								"key": "Cache-Control",
+								"type": "text",
+								"name": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Postman-Token",
+								"type": "text",
+								"name": "Postman-Token",
+								"value": "8d7ce6ff-936e-a1e7-1870-59c2ab13f88f"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"data": [
+							{
+								"key": "client_id",
+								"value": "dfD2OGMUtlWxxN6zjyi0N3wRwSGhOHQL"
+							},
+							{
+								"key": "client_secret",
+								"value": "SWTHTvUJHyJ2R1kY"
+							}
+						],
+						"method": "POST",
+						"dataMode": "urlencoded"
+					}
+				}
+			]
+		}
+	]
+}

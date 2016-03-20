@@ -1,0 +1,4 @@
+– Give	one	reason	(there	are	many)	OAuth	tokens	should	not	be	granted	in	the	main	flow,	
+assuming	the	user	has	sent	in	the	correct	credentials.
+
+One of the reaons is extra security. If the main flow were to acess the resource with the token, instead of separating that into another area, then the client id, client secret, and access token are all being exposed together. By separating them there can be extra security getting the access token vs using the acess token.
